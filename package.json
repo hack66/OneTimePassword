@@ -1,0 +1,22 @@
+{
+  "name": "OneTimePassword",
+  "version": "0.0.0",
+  "description": "Two-factor authentication app for Firefox OS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hack66/OneTimePassword"
+  },
+  "keywords": [
+    "FirefoxOS",
+    "TOTP",
+    "security",
+    "authentication",
+    "2-factor"
+  ],
+  "author": "Marios Isaakidis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hack66/OneTimePassword/issues"
+  }
+}
