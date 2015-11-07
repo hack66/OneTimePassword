@@ -16,7 +16,12 @@ module.exports = function(grunt) {
       main: {
         files: [
           {expand: true, cwd: 'src/', src: ['**'], dest: 'build/'},
-          {src: 'manifest.webapp', dest: 'build/'}
+          {src: ['manifest.webapp'], dest: 'build/'}
+        ]
+      },
+      dev: {
+        files: [
+          {expand: true, cwd: 'bower_components', src: ['**', '!**/bower.json'], dest: 'src/bower/'}
         ]
       }
     }
@@ -28,5 +33,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['copy', 'uglify']);
+  grunt.registerTask('dev', ['copy:dev']);
 
 };

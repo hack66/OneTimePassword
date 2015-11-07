@@ -1,0 +1,29 @@
+{
+  "name": "OneTimePassword",
+  "description": "Two-factor authentication app for Firefox OS",
+  "main": "src/index.html",
+  "authors": [
+    "Marios Isaakidis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "FirefoxOS",
+    "TOTP",
+    "security",
+    "authentication",
+    "2-factor"
+  ],
+  "homepage": "https://github.com/hack66/OneTimePassword",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gaia-fonts": "gaia-components/gaia-fonts#~0.2.1"
+  }
+}
