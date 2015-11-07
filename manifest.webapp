@@ -1,0 +1,23 @@
+{
+  "name": "OneTimePassword",
+  "description": "Two-factor authentication app for Firefox OS",
+  "version": "0.1.0",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "hack66",
+    "url": "https://github.com/hack66/OneTimePassword"
+  },
+  "type": "privileged",
+  "permissions": {},
+  "installs_allowed_from": [
+    "https://marketplace.firefox.com"
+  ],
+  "precompile": [
+    "index.js"
+  ],
+  "default_locale": "en",
+  "chrome": { "navigation": false }
+}
