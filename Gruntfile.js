@@ -21,7 +21,13 @@ module.exports = function(grunt) {
       },
       dev: {
         files: [
-          {expand: true, cwd: 'bower_components', src: ['**', '!**/bower.json'], dest: 'src/bower/'}
+          {src: ['bower_components/gaia-fonts/**', '!**/bower.json'], dest: 'src/'},
+          {src: ['bower_components/gaia-header/gaia-header.js'], dest: 'src/'},
+          {src: ['bower_components/gaia-layout/style.css'], dest:'src/'},
+          {src: ['bower_components/gaia-component/gaia-component.js'], dest:'src/'},
+          {expand: true, cwd: 'bower_components/gaia-icons/', src: ['gaia-icons.js', 'gaia-icons.css'], dest: 'src/bower_components/gaia-icons/'},
+          {src: ['bower_components/base/base.css'], dest:'src/'},
+          {src: ['bower_components/gaia-theme/**', '!**/bower.json'], dest: 'src/'}
         ]
       }
     }
@@ -32,7 +38,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
-  grunt.registerTask('default', ['copy', 'uglify']);
+  grunt.registerTask('default', ['copy:dev', 'copy:main', 'uglify']);
   grunt.registerTask('dev', ['copy:dev']);
 
 };
