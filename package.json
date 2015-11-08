@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "bower": "latest",
+    "grunt": "latest",
+    "grunt-cli": "latest",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-uglify": "~0.5.0"
   }
